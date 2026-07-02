@@ -1,0 +1,29 @@
+{
+  "description": "Basic capability negotiation",
+  "metadata": {
+    "protocol_version": "1.1.0",
+    "rfc": "RFC-0014"
+  },
+  "input": {
+    "local": {
+      "version": "1.1.0",
+      "features": ["RFC0001", "SHA256"],
+      "profiles": ["Reader"],
+      "extensions": []
+    },
+    "remote": {
+      "version": "1.1.0",
+      "features": ["RFC0001", "SHA256"],
+      "profiles": ["Reader"],
+      "extensions": ["slack-v1"]
+    }
+  },
+  "expected": {
+    "negotiated_version": "1.1.0",
+    "compatibility_status": "COMPATIBLE",
+    "reason_code": "NEGOTIATION_SUCCESS",
+    "negotiated_features": ["RFC0001", "SHA256"],
+    "negotiated_profiles": ["Reader"],
+    "negotiated_extensions": []
+  }
+}

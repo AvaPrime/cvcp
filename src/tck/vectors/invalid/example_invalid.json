@@ -1,0 +1,17 @@
+{
+  "description": "Malformed version string",
+  "metadata": {
+    "protocol_version": "1.1.0",
+    "rfc": "RFC-0014"
+  },
+  "input": {
+    "version": "1.1",
+    "features": ["RFC0001"],
+    "profiles": [],
+    "extensions": []
+  },
+  "expected": {
+    "status": "FAIL",
+    "error_code": "CVCP_ERR_PROTOCOL_VERSION"
+  }
+}

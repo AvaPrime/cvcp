@@ -1,0 +1,16 @@
+{
+  "description": "Example valid CVCP capabilities",
+  "metadata": {
+    "protocol_version": "1.1.0",
+    "rfc": "RFC-0014"
+  },
+  "input": {
+    "version": "1.1.0",
+    "features": ["RFC0001", "RFC8785-JCS"],
+    "profiles": ["Reader"],
+    "extensions": ["github-v1"]
+  },
+  "expected": {
+    "status": "PASS"
+  }
+}

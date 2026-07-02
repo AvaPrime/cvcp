@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CVCP TCK Compliance Dashboard</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CVCP Technology Compatibility Kit</h1>
+      <p class="subtitle">Protocol Compliance Dashboard</p>
+    </header>
+    
+    <main>
+      <section class="summary-cards">
+        <div class="card">
+          <h3>SDK Under Test</h3>
+          <p id="sdk-name">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Protocol Version</h3>
+          <p id="protocol-version">Loading...</p>
+        </div>
+        <div class="card">
+          <h3>Compliance Score</h3>
+          <p id="compliance-score" class="score">--%</p>
+        </div>
+      </section>
+
+      <section class="test-stats">
+        <div class="stat-box passed">
+          <span class="label">Passed</span>
+          <span class="value" id="stat-passed">-</span>
+        </div>
+        <div class="stat-box failed">
+          <span class="label">Failed</span>
+          <span class="value" id="stat-failed">-</span>
+        </div>
+        <div class="stat-box skipped">
+          <span class="label">Skipped</span>
+          <span class="value" id="stat-skipped">-</span>
+        </div>
+        <div class="stat-box total">
+          <span class="label">Total</span>
+          <span class="value" id="stat-total">-</span>
+        </div>
+      </section>
+
+      <section class="details">
+        <h2>Failed Tests</h2>
+        <ul id="failed-list" class="failed-list">
+          <!-- Populated by JS -->
+        </ul>
+      </section>
+    </main>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>

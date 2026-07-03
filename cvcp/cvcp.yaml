@@ -1,0 +1,21 @@
+protocol:
+  id: "cvcp"
+  name: "Cross-Vendor Communication Protocol"
+  version: "1.1.0"
+  api_version: 1
+  schema_version: 1
+  status: "stable"
+  spec_uri: "https://github.com/AvaPrime/cvcp/tree/main/specs"
+
+governance:
+  working_group: "CVCP-WG"
+  adr_policy: "rfc-0000"
+  registry_uri: "https://github.com/AvaPrime/cvcp/tree/main/registry"
+
+compliance:
+  tck_version: "1.1.0"
+  certification_badge_url: "https://img.shields.io/badge/CVCP-Certified-success.svg"
+
+implementations:
+  reference: "codessa-v1.1"
+  sdk_support: ["typescript", "python", "rust"]
